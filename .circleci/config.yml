@@ -179,7 +179,7 @@ workflows:
               only: /.*/
       - build:
           name: "build_dsl-ac68u"
-          model: "dsl-ac68u"
+          model: "Xdsl-ac68u"
           release_dir: "src-rt-6.x.4708"
           requires:
             - getcode
@@ -193,7 +193,7 @@ workflows:
                 - DEV_TUF*
       - build:
           name: "build_dsl-ax82u"
-          model: "dsl-ax82u"
+          model: "Xdsl-ax82u"
           release_dir: "src-rt-5.02axhnd.675x"
           requires:
             - getcode
@@ -207,7 +207,7 @@ workflows:
                 - DEV_TUF*
       - build:
           name: "build_rt-ax82u"
-          model: "rt-ax82u"
+          model: "Xrt-ax82u"
           release_dir: "src-rt-5.02axhnd.675x"
           requires:
             - getcode
