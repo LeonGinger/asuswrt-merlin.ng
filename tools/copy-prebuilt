@@ -94,7 +94,7 @@ then
 	cp release/src-rt-5.02axhnd/hostTools/prebuilt/lzmacmd $REPO/release/src-rt-5.02axhnd/hostTools/prebuilt/
 	rsync -a --del release/src-rt-5.02axhnd/router-sysdep/ $REPO/release/src-rt-5.02axhnd/router-sysdep.$BUILD_NAME_LC
 
-elif [ "$BUILD_NAME" == "RT-AX56U" ] || [ "$BUILD_NAME" == "RT-AX58U" ] || [ "$BUILD_NAME" == "DSL-AX82U" ] || [ "$BUILD_NAME" == "RT-AX82U" ]
+elif [ "$BUILD_NAME" == "RT-AX56U" ] || [ "$BUILD_NAME" == "RT-AX58U" ] || [ "$BUILD_NAME" == "DSL-AX82U" ] || [ "$BUILD_NAME" == "RT-AX82U" ] || [ "$BUILD_NAME" == "TUF-AX5400" ]
 then
 	SDK="_6750hnd"
 	ARCH="_arm"
