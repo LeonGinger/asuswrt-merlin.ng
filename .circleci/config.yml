@@ -223,8 +223,8 @@ workflows:
                 - mainline
                 - DEV_TUF*
       - build:
-          name: "build_rt-ax95u"
-          model: "rt-ax95u"
+          name: "build_rt-ax95q"
+          model: "rt-ax95q"
           release_dir: "src-rt-5.02axhnd.675x"
           requires:
             - getcode
