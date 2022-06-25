@@ -8131,6 +8131,9 @@ int init_nvram(void)
 		nvram_set("vlan1hwname", "et0");
 		nvram_set("vlan2hwname", "et0");
 		nvram_set("landevs", "vlan1 wl0 wl1");
+		nvram_set("wl0_radio","0");
+  		nvram_set("wl1_radio","0");
+			
 #ifdef RTCONFIG_DUALWAN
 		if (is_router_mode()) {
 			//Andy Chiu, 2015/09/11
