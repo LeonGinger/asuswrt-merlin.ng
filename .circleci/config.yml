@@ -130,10 +130,10 @@ jobs:
           name: "Publish manifest and release note for the current build"
           command: |
             ssh-keyscan github.com >> ~/.ssh/known_hosts
-            git config --global user.email "bot@gnuton.org"
-            git config --global user.name "Circle CI BOT"
+            git config --global user.email "leongginger1127@gmail.com"
+            git config --global user.name "leongginger bot"
             git config --global push.default simple
-            git clone -b master --single-branch git@github.com:gnuton/asuswrt-merlin.ng.git
+            git clone -b master --single-branch git@github.com:LeonGinger/asuswrt-merlin.ng.git
             cd asuswrt-merlin.ng
             UPDATE_DIR=updates
             MAJOR_VER=$(echo "${CIRCLE_TAG}" | sed -E 's/([0-9.]*)[_-]?(.*)/\1/')
